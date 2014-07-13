@@ -9,3 +9,5 @@ module.exports = ->
     group: 'root'
     sudo: true
     mode: '0644'
+
+  @then @service, 'postfix', action: 'restart'
