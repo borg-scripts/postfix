@@ -67,6 +67,6 @@ recipient_canonical_maps = <%= @server['postfix']['recipient_canonical_maps'] %>
 <% if @server['postfix']['canonical_maps']: %>
 canonical_maps = <%= @server['postfix']['canonical_maps'] %>
 <% end %>
-<% if @server.postfix.transport_maps? && @server.postfix.transport?: %>
+<% if @server['postfix']['transport_maps'] && @server['postfix']['transport']: %>
 transport_maps = <%= @server['postfix']['transport_maps'] %>
 <% end %>
